@@ -1,0 +1,7 @@
+Fourmilab mind grenade science simulation
+
+Algorithmic music synthesis, music repeats only every 17 years
+
+Linear feedback shift register
+
+Full permissions; object and script may be modified as you wish

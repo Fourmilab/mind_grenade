@@ -1,0 +1,20 @@
+The Fourmilab Mind Grenade for Second Life was created to celebrate the fiftieth anniversary of the hardware Mind Grenade, built in the fall of 1969.  For the story of the original Mind Grenade and details of its construction and operation, see the Web document:
+
+    https://www.fourmilab.ch/webtools/MindGrenade/
+
+The Mind Grenade uses a linear-feedback shift register to generate pseudorandom music which is played at a given tempo (notes per second).  The shift register is 31 bits in length, which provides a sequence of sufficient length that with the default tempo of four notes per second the tune will not repeat for over 17 years.  Nine lights show the state of the least significant bits of the shift register (the original hardware Mind Grenade used a 9-bit register) and can display in either colour (based on a three bit history for each cell in the shift register) or monochrome (showing only the current state of each bit).
+
+This is a toy which you may find amusing but probably won't want to use on a regular basis.  Since it is delivered with full permissions and the model and script may be modified, copied, and re-used as you wish, it may be useful as a starting point for builders interested in doing similar things.
+
+The land impact of 15 is substantial for such a simple thing, but that's because it's built entirely from prims which can be edited within Second Life; there is no opaque mesh that isn't open to your inspection and modification.
+
+Source code for this project is maintained on and available from the GitHub repository:
+    https://github.com/Fourmilab/mind_grenade
+
+License
+----------
+
+This product (software, documents, images, and original models) is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+    http://creativecommons.org/licenses/by-sa/4.0/
+    https://creativecommons.org/licenses/by-sa/4.0/legalcode
+You are free to copy and redistribute this material in any medium or format, and to remix, transform, and build upon the material for any purpose, including commercially.  You must give credit, provide a link to the license, and indicate if changes were made.  If you remix, transform, or build upon this material, you must distribute your contributions under the same license as the original.
