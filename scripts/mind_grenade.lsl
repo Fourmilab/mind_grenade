@@ -150,6 +150,11 @@
 
             } else if (param == "tempo") {      // tempo: set note length, seconds
                 Tempo = value;
+                if (Tempo < 0.1) {
+                    Tempo = 0.1;
+                } else if (Tempo > 2) {
+                    Tempo = 2;
+                }
                 if (running) {
                     llSetTimerEvent(Tempo);
                 }

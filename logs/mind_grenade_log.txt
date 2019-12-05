@@ -46,7 +46,12 @@ and yielding:
 a 194 megabyte (!) file suitable for uploading.  The file was
 uploaded to YouTube as:
     https://www.youtube.com/watch?v=F5sOpLgJkZQ
-    
+
+Added an llResetScript() call to the on_rez() event.  This
+guarantees that all script variables are reset to their defaults
+when the object is instantiated from the inventory, not left at
+whatever values they had when taken into inventory.
+
 Created local development Git repository in:
     ~/w/SecondLife/MindGrenade/git
 with:
@@ -59,7 +64,6 @@ Added and committed:
     Marketplace (listing text, images)
     Scripts
     Logs (this file)
-
 
 Logged on to github.com.
 
@@ -76,8 +80,9 @@ Pushed the production directory to the repository with:
 Confirmed that my local "git sync" command works with the remote
 repository.
 
-Added an llResetScript() call to the on_rez() event.  This
-guarantees that all script variables are reset to their defaults
-when the object is instantiated from the inventory, not left at
-whatever values they had when taken into inventory.
+2019 December 5
 
+Added code to "set tempo" to limit the tempo to between 0.1 and
+2 seconds.  Setting the tempo too fast could cause script errors
+due to overrunning the audio queue length.  This will prevent
+that from happening.
